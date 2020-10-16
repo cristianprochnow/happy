@@ -6,6 +6,7 @@
 }
 
 #page-map aside {
+  z-index: 10;
   width: 440px;
   padding: 80px;
   display: flex;
@@ -61,4 +62,40 @@
 
 #page-map .create-orphanage:hover {
   background: #17D6EB;
+}
+
+#page-map .map-popup .leaflet-popup-content-wrapper {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+}
+
+#page-map .map-popup .leaflet-popup-content {
+  margin: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0089A5;
+}
+
+#page-map .map-popup .leaflet-popup-content a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #15C3D6;
+  box-shadow: 17.2868px 27.6589px 41.4884px rgba(23, 142, 166, 0.16);
+  transition: background-color 0.3s;
+}
+
+#page-map .map-popup .leaflet-popup-content a:hover {
+  background: #0089A5;
+}
+
+#page-map .map-popup .leaflet-popup-tip-container {
+  display: none;
 }
